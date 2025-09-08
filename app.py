@@ -39,8 +39,8 @@ def get_chatbot_response_stream(prompt: str):
         # 1. Prepare and send the request to the 'insert' API.
         params = {
             "task": prompt,
-            "context": "general chatbot conversation",
-            "required": "short answer only answer which is asked,dont answer anything else"
+            "context": "",
+            "required": ""
         }
         encoded_params = urllib.parse.urlencode(params)
         insert_url = f"{INSERT_API_URL}?{encoded_params}"
