@@ -39,8 +39,8 @@ def get_chatbot_response_stream(prompt: str):
         # 1. Prepare and send the request to the 'insert' API.
         params = {
             "task": prompt,
-            "context": "",
-            "required": ""
+            "context": "Summarize the document into a concise summary highlighting key objectives, scope, and requirements.",
+            "required": "Provide a short, clear summary of the RFP suitable for quick review by management.",
         }
         encoded_params = urllib.parse.urlencode(params)
         insert_url = f"{INSERT_API_URL}?{encoded_params}"
