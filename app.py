@@ -6,8 +6,8 @@ import urllib.parse
 
 # --- Configuration ---
 # The two API endpoints provided by the user.
-INSERT_API_URL = "https://nodejsllm-1.onrender.com/insert"
-STREAM_API_URL = "https://nodejsllm-1.onrender.com/true"
+INSERT_API_URL = "https://nodejsllm-49xp.onrender.com/insert"
+STREAM_API_URL = "https://nodejsllm-49xp.onrender.com/true"
 
 # The name of the bot for the chat interface.
 BOT_NAME = "API Chatbot"
